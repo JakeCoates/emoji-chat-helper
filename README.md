@@ -2,7 +2,7 @@
 
 Search RuneLite's emoji as you type in Old School RuneScape chat. Start a name with a colon, like `:smil`, and a list shows the matching emoji, what's left to type, and their emoticons, like `Xd` and `<3`.
 
-![The list of matches while typing :smil](docs/screenshots/preview-search.png)
+![In game, typing :face lists matching emoji with the rest of each name to type in yellow](docs/screenshots/in-game-search.png)
 
 ## What it does
 
@@ -15,9 +15,13 @@ Search RuneLite's emoji as you type in Old School RuneScape chat. Start a name w
 
 The list only suggests. RuneLite doesn't allow plugins to type into the chatbox, so you type the rest yourself.
 
-| Typing a colon | Typing an emoticon | Only emoticons |
-|---|---|---|
-| ![A lone colon lists the emoticons that start with one](docs/screenshots/preview-colon.png) | ![Xd lists the emoji it becomes](docs/screenshots/preview-emoticon.png) | ![With Only emoticons on, :smil lists emoticons](docs/screenshots/preview-emoticons-only.png) |
+![In game, typing :smiling_face_ lists the smiling faces, with an emoji sent in chat above](docs/screenshots/in-game-chat.png)
+
+More of the list, drawn outside the game:
+
+| Typing `:smil` | Typing a colon | Typing an emoticon | Only emoticons |
+|---|---|---|---|
+| ![Typing :smil lists the smiling faces](docs/screenshots/preview-search.png) | ![A lone colon lists the emoticons that start with one](docs/screenshots/preview-colon.png) | ![Xd lists the emoji it becomes](docs/screenshots/preview-emoticon.png) | ![With Only emoticons on, :smil lists emoticons](docs/screenshots/preview-emoticons-only.png) |
 
 ## Who sees the emoji
 

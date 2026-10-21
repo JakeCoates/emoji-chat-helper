@@ -2,7 +2,9 @@
 
 Pictures for the main README and the Plugin Hub listing.
 
-The `preview-*.png` files are the list drawn by the plugin's own code, outside the game, so the README has pictures from the start. Replace them with in-game screenshots as you take them, keeping the names so the README still finds them:
+`in-game-search.png` and `in-game-chat.png` are in-game screenshots: typing `:face`, and typing `:smiling_face_` with an emoji in chat above.
+
+The `preview-*.png` files are the list drawn by the plugin's own code, outside the game. Replace them with in-game screenshots as you take them, keeping the names so the README still finds them:
 
 | File | Shows |
 |---|---|
@@ -13,7 +15,7 @@ The `preview-*.png` files are the list drawn by the plugin's own code, outside t
 
 Worth adding:
 
-- `chat.png`: emoji showing in chat and over a player's head
+- emoji over a player's head
 - `private-message.png`: the list above the private message prompt
 - `style.png`: the Style settings, or the list with a custom style
 - `settings.png`: the plugin's settings panel
