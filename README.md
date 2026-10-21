@@ -38,6 +38,10 @@ RuneLite matches names and emoticons in their exact case: `Xd` works, `XD` and `
 
 The **Style** section sets the list's font and size, emoji size, padding, row spacing, text shadow, background (lower its alpha to make it see-through), border, and text colours.
 
+## 🤖 AI Disclosure
+
+Portions of this project were developed with the assistance of Claude Opus 5.5 for orchestration and local Qwen 27B subagents. AI tools were primarily used for generating boilerplate code, writing unit tests, and optimising algorithms. All AI-generated code was reviewed, tested, and vetted by the human maintainers.
+
 ## Credits
 
 Emoji pictures are [Twemoji](https://github.com/jdecked/twemoji), as RuneLite ships them. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
