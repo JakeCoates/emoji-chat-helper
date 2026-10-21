@@ -1,0 +1,1367 @@
+# codepoint, RuneLite's name, Slack's names. Built by dev-tools/BuildEmojiData.java
+1f600 grinning_face grinning
+1f603 grinning_face_with_big_eyes smiley
+1f604 grinning_face_with_smiling_eyes smile
+1f601 beaming_face_with_smiling_eyes grin
+1f606 grinning_squinting_face laughing satisfied
+1f605 grinning_face_with_sweat sweat_smile
+1f923 rolling_on_the_floor_laughing
+1f602 face_with_tears_of_joy joy
+1f642 slightly_smiling_face
+1f643 upside-down_face upside_down_face
+1fae0 melting_face
+1f609 winking_face wink
+1f60a smiling_face_with_smiling_eyes blush
+1f607 smiling_face_with_halo innocent
+1f970 smiling_face_with_hearts smiling_face_with_3_hearts
+1f60d smiling_face_with_heart-eyes heart_eyes
+1f929 star-struck grinning_face_with_star_eyes
+1f618 face_blowing_a_kiss kissing_heart
+1f617 kissing_face kissing
+263a smiling_face relaxed
+1f61a kissing_face_with_closed_eyes kissing_closed_eyes
+1f619 kissing_face_with_smiling_eyes kissing_smiling_eyes
+1f972 smiling_face_with_tear
+1f60b face_savoring_food yum
+1f61b face_with_tongue stuck_out_tongue
+1f61c winking_face_with_tongue stuck_out_tongue_winking_eye
+1f92a zany_face grinning_face_with_one_large_and_one_small_eye
+1f61d squinting_face_with_tongue stuck_out_tongue_closed_eyes
+1f911 money-mouth_face money_mouth_face
+1f917 smiling_face_with_open_hands hugging_face
+1f92d face_with_hand_over_mouth smiling_face_with_smiling_eyes_and_hand_covering_mouth
+1fae2 face_with_open_eyes_and_hand_over_mouth
+1fae3 face_with_peeking_eye
+1f92b shushing_face face_with_finger_covering_closed_lips
+1f914 thinking_face
+1fae1 saluting_face
+1f910 zipper-mouth_face zipper_mouth_face
+1f928 face_with_raised_eyebrow face_with_one_eyebrow_raised
+1f610 neutral_face
+1f611 expressionless_face expressionless
+1f636 face_without_mouth no_mouth
+1fae5 dotted_line_face
+1f60f smirking_face smirk
+1f612 unamused_face unamused
+1f644 face_with_rolling_eyes
+1f62c grimacing_face grimacing
+1f925 lying_face
+1f60c relieved_face relieved
+1f614 pensive_face pensive
+1f62a sleepy_face sleepy
+1f924 drooling_face
+1f634 sleeping_face sleeping
+1f637 face_with_medical_mask mask
+1f912 face_with_thermometer
+1f915 face_with_head-bandage face_with_head_bandage
+1f922 nauseated_face
+1f92e face_vomiting face_with_open_mouth_vomiting
+1f927 sneezing_face
+1f975 hot_face
+1f976 cold_face
+1f974 woozy_face
+1f635 face_with_crossed-out_eyes dizzy_face
+1f92f exploding_head shocked_face_with_exploding_head
+1f920 cowboy_hat_face face_with_cowboy_hat
+1f973 partying_face
+1f978 disguised_face
+1f60e smiling_face_with_sunglasses
+1f913 nerd_face
+1f9d0 face_with_monocle
+1f615 confused_face confused
+1fae4 face_with_diagonal_mouth
+1f61f worried_face worried
+1f641 slightly_frowning_face
+2639 frowning_face white_frowning_face
+1f62e face_with_open_mouth open_mouth
+1f62f hushed_face hushed
+1f632 astonished_face astonished
+1f633 flushed_face flushed
+1f97a pleading_face
+1f979 face_holding_back_tears
+1f626 frowning_face_with_open_mouth frowning
+1f627 anguished_face anguished
+1f628 fearful_face fearful
+1f630 anxious_face_with_sweat cold_sweat
+1f625 sad_but_relieved_face disappointed_relieved
+1f622 crying_face cry
+1f62d loudly_crying_face sob
+1f631 face_screaming_in_fear scream
+1f616 confounded_face confounded
+1f623 persevering_face persevere
+1f61e disappointed_face disappointed
+1f613 downcast_face_with_sweat sweat
+1f629 weary_face weary
+1f62b tired_face
+1f971 yawning_face
+1f624 face_with_steam_from_nose triumph
+1f621 enraged_face rage
+1f620 angry_face angry
+1f92c face_with_symbols_on_mouth serious_face_with_symbols_covering_mouth
+1f608 smiling_face_with_horns smiling_imp
+1f47f angry_face_with_horns imp
+1f480 skull
+2620 skull_and_crossbones
+1f4a9 pile_of_poo hankey poop shit
+1f921 clown_face
+1f479 ogre japanese_ogre
+1f47a goblin japanese_goblin
+1f47b ghost
+1f47d alien
+1f47e alien_monster space_invader
+1f916 robot robot_face
+1f63a grinning_cat smiley_cat
+1f638 grinning_cat_with_smiling_eyes smile_cat
+1f639 cat_with_tears_of_joy joy_cat
+1f63b smiling_cat_with_heart-eyes heart_eyes_cat
+1f63c cat_with_wry_smile smirk_cat
+1f63d kissing_cat
+1f640 weary_cat scream_cat
+1f63f crying_cat crying_cat_face
+1f63e pouting_cat
+1f648 see-no-evil_monkey see_no_evil
+1f649 hear-no-evil_monkey hear_no_evil
+1f64a speak-no-evil_monkey speak_no_evil
+1f48c love_letter
+1f498 heart_with_arrow cupid
+1f49d heart_with_ribbon gift_heart
+1f496 sparkling_heart
+1f497 growing_heart heartpulse
+1f493 beating_heart heartbeat
+1f49e revolving_hearts
+1f495 two_hearts
+1f49f heart_decoration
+2763 heart_exclamation heavy_heart_exclamation_mark_ornament
+1f494 broken_heart
+2764 red_heart heart
+1f9e1 orange_heart
+1f49b yellow_heart
+1f49a green_heart
+1f499 blue_heart
+1f49c purple_heart
+1f90e brown_heart
+1f5a4 black_heart
+1f90d white_heart
+1f48b kiss_mark
+1f4af hundred_points 100
+1f4a2 anger_symbol anger
+1f4a5 collision boom
+1f4ab dizzy
+1f4a6 sweat_droplets sweat_drops
+1f4a8 dashing_away dash
+1f573 hole
+1f4ac speech_balloon
+1f5e8 left_speech_bubble
+1f5ef right_anger_bubble
+1f4ad thought_balloon
+1f4a4 zzz
+1f44b waving_hand wave
+1f91a raised_back_of_hand
+1f590 hand_with_fingers_splayed raised_hand_with_fingers_splayed
+270b raised_hand hand
+1f596 vulcan_salute spock-hand
+1faf1 rightwards_hand
+1faf2 leftwards_hand
+1faf3 palm_down_hand
+1faf4 palm_up_hand
+1f44c ok_hand
+1f90c pinched_fingers
+1f90f pinching_hand
+270c victory_hand v
+1f91e crossed_fingers hand_with_index_and_middle_fingers_crossed
+1faf0 hand_with_index_finger_and_thumb_crossed
+1f91f love-you_gesture i_love_you_hand_sign
+1f918 sign_of_the_horns the_horns
+1f919 call_me_hand
+1f448 backhand_index_pointing_left point_left
+1f449 backhand_index_pointing_right point_right
+1f446 backhand_index_pointing_up point_up_2
+1f595 middle_finger reversed_hand_with_middle_finger_extended
+1f447 backhand_index_pointing_down point_down
+261d index_pointing_up point_up
+1faf5 index_pointing_at_the_viewer
+1f44d thumbs_up +1 thumbsup
+1f44e thumbs_down -1 thumbsdown
+270a raised_fist fist
+1f44a oncoming_fist facepunch punch
+1f91b left-facing_fist
+1f91c right-facing_fist
+1f44f clapping_hands clap
+1f64c raising_hands raised_hands
+1faf6 heart_hands
+1f450 open_hands
+1f932 palms_up_together
+1f91d handshake
+1f64f folded_hands pray
+270d writing_hand
+1f485 nail_polish nail_care
+1f933 selfie
+1f4aa flexed_biceps muscle
+1f9be mechanical_arm
+1f9bf mechanical_leg
+1f9b5 leg
+1f9b6 foot
+1f442 ear
+1f9bb ear_with_hearing_aid
+1f443 nose
+1f9e0 brain
+1fac0 anatomical_heart
+1fac1 lungs
+1f9b7 tooth
+1f9b4 bone
+1f440 eyes
+1f441 eye
+1f445 tongue
+1f444 mouth lips
+1fae6 biting_lip
+1f476 baby
+1f9d2 child
+1f466 boy
+1f467 girl
+1f9d1 person adult
+1f471 person_blond_hair person_with_blond_hair
+1f468 man
+1f9d4 person_beard bearded_person
+1f469 woman
+1f9d3 older_person older_adult
+1f474 old_man older_man
+1f475 old_woman older_woman
+1f64d person_frowning
+1f64e person_pouting person_with_pouting_face
+1f645 person_gesturing_no no_good
+1f646 person_gesturing_ok ok_woman
+1f481 person_tipping_hand information_desk_person
+1f64b person_raising_hand raising_hand
+1f9cf deaf_person
+1f647 person_bowing bow
+1f926 person_facepalming face_palm
+1f937 person_shrugging shrug
+1f46e police_officer cop
+1f575 detective sleuth_or_spy
+1f482 guard guardsman
+1f977 ninja
+1f477 construction_worker
+1fac5 person_with_crown
+1f934 prince
+1f478 princess
+1f473 person_wearing_turban man_with_turban
+1f472 person_with_skullcap man_with_gua_pi_mao
+1f9d5 woman_with_headscarf person_with_headscarf
+1f935 person_in_tuxedo
+1f470 person_with_veil bride_with_veil
+1f930 pregnant_woman
+1fac3 pregnant_man
+1fac4 pregnant_person
+1f931 breast-feeding
+1f47c baby_angel angel
+1f385 santa_claus santa
+1f936 mrs._claus mrs_claus mother_christmas
+1f9b8 superhero
+1f9b9 supervillain
+1f9d9 mage
+1f9da fairy
+1f9db vampire
+1f9dc merperson
+1f9dd elf
+1f9de genie
+1f9df zombie
+1f9cc troll
+1f486 person_getting_massage massage
+1f487 person_getting_haircut haircut
+1f6b6 person_walking walking
+1f9cd person_standing standing_person
+1f9ce person_kneeling kneeling_person
+1f3c3 person_running runner running
+1f483 woman_dancing dancer
+1f57a man_dancing
+1f574 person_in_suit_levitating man_in_business_suit_levitating
+1f46f people_with_bunny_ears dancers
+1f9d6 person_in_steamy_room
+1f9d7 person_climbing
+1f93a person_fencing fencer
+1f3c7 horse_racing
+26f7 skier
+1f3c2 snowboarder
+1f3cc person_golfing golfer
+1f3c4 person_surfing surfer
+1f6a3 person_rowing_boat rowboat
+1f3ca person_swimming swimmer
+26f9 person_bouncing_ball person_with_ball
+1f3cb person_lifting_weights weight_lifter
+1f6b4 person_biking bicyclist
+1f6b5 person_mountain_biking mountain_bicyclist
+1f938 person_cartwheeling person_doing_cartwheel
+1f93c people_wrestling wrestlers
+1f93d person_playing_water_polo water_polo
+1f93e person_playing_handball handball
+1f939 person_juggling juggling
+1f9d8 person_in_lotus_position
+1f6c0 person_taking_bath bath
+1f6cc person_in_bed sleeping_accommodation
+1f46d women_holding_hands two_women_holding_hands
+1f46b woman_and_man_holding_hands man_and_woman_holding_hands couple
+1f46c men_holding_hands two_men_holding_hands
+1f48f kiss couplekiss
+1f491 couple_with_heart
+1f5e3 speaking_head speaking_head_in_silhouette
+1f464 bust_in_silhouette
+1f465 busts_in_silhouette
+1fac2 people_hugging
+1f46a family
+1f463 footprints
+1f3fb light_skin_tone skin-tone-2
+1f3fc medium-light_skin_tone skin-tone-3
+1f3fd medium_skin_tone skin-tone-4
+1f3fe medium-dark_skin_tone skin-tone-5
+1f3ff dark_skin_tone skin-tone-6
+1f435 monkey_face
+1f412 monkey
+1f98d gorilla
+1f9a7 orangutan
+1f436 dog_face
+1f415 dog dog2
+1f9ae guide_dog
+1f429 poodle
+1f43a wolf
+1f98a fox fox_face
+1f99d raccoon
+1f431 cat_face
+1f408 cat cat2
+1f981 lion lion_face
+1f42f tiger_face
+1f405 tiger tiger2
+1f406 leopard
+1f434 horse_face
+1f40e horse racehorse
+1f984 unicorn unicorn_face
+1f993 zebra zebra_face
+1f98c deer
+1f9ac bison
+1f42e cow_face
+1f402 ox
+1f403 water_buffalo
+1f404 cow cow2
+1f437 pig_face
+1f416 pig pig2
+1f417 boar
+1f43d pig_nose
+1f40f ram
+1f411 ewe sheep
+1f410 goat
+1f42a camel dromedary_camel
+1f42b two-hump_camel
+1f999 llama
+1f992 giraffe giraffe_face
+1f418 elephant
+1f9a3 mammoth
+1f98f rhinoceros
+1f99b hippopotamus
+1f42d mouse_face
+1f401 mouse mouse2
+1f400 rat
+1f439 hamster
+1f430 rabbit_face
+1f407 rabbit rabbit2
+1f43f chipmunk
+1f9ab beaver
+1f994 hedgehog
+1f987 bat
+1f43b bear
+1f428 koala
+1f43c panda panda_face
+1f9a5 sloth
+1f9a6 otter
+1f9a8 skunk
+1f998 kangaroo
+1f9a1 badger
+1f43e paw_prints feet
+1f983 turkey
+1f414 chicken
+1f413 rooster
+1f423 hatching_chick
+1f424 baby_chick
+1f425 front-facing_baby_chick hatched_chick
+1f426 bird
+1f427 penguin
+1f54a dove dove_of_peace
+1f985 eagle
+1f986 duck
+1f9a2 swan
+1f989 owl
+1f9a4 dodo
+1fab6 feather
+1f9a9 flamingo
+1f99a peacock
+1f99c parrot
+1f438 frog
+1f40a crocodile
+1f422 turtle
+1f98e lizard
+1f40d snake
+1f432 dragon_face
+1f409 dragon
+1f995 sauropod
+1f996 t-rex
+1f433 spouting_whale
+1f40b whale whale2
+1f42c dolphin flipper
+1f9ad seal
+1f41f fish
+1f420 tropical_fish
+1f421 blowfish
+1f988 shark
+1f419 octopus
+1f41a spiral_shell shell
+1fab8 coral
+1f980 crab
+1f99e lobster
+1f990 shrimp
+1f991 squid
+1f9aa oyster
+1f40c snail
+1f98b butterfly
+1f41b bug
+1f41c ant
+1f41d honeybee bee
+1fab2 beetle
+1f41e lady_beetle ladybug
+1f997 cricket
+1fab3 cockroach
+1f577 spider
+1f578 spider_web
+1f982 scorpion
+1f99f mosquito
+1fab0 fly
+1fab1 worm
+1f9a0 microbe
+1f490 bouquet
+1f338 cherry_blossom
+1f4ae white_flower
+1fab7 lotus
+1f3f5 rosette
+1f339 rose
+1f940 wilted_flower
+1f33a hibiscus
+1f33b sunflower
+1f33c blossom
+1f337 tulip
+1f331 seedling
+1fab4 potted_plant
+1f332 evergreen_tree
+1f333 deciduous_tree
+1f334 palm_tree
+1f335 cactus
+1f33e sheaf_of_rice ear_of_rice
+1f33f herb
+2618 shamrock
+1f340 four_leaf_clover
+1f341 maple_leaf
+1f342 fallen_leaf
+1f343 leaf_fluttering_in_wind leaves
+1fab9 empty_nest
+1faba nest_with_eggs
+1f344 mushroom
+1f347 grapes
+1f348 melon
+1f349 watermelon
+1f34a tangerine
+1f34b lemon
+1f34c banana
+1f34d pineapple
+1f96d mango
+1f34e red_apple apple
+1f34f green_apple
+1f350 pear
+1f351 peach
+1f352 cherries
+1f353 strawberry
+1fad0 blueberries
+1f95d kiwi_fruit kiwifruit
+1f345 tomato
+1fad2 olive
+1f965 coconut
+1f951 avocado
+1f346 eggplant
+1f954 potato
+1f955 carrot
+1f33d ear_of_corn corn
+1f336 hot_pepper
+1fad1 bell_pepper
+1f952 cucumber
+1f96c leafy_green
+1f966 broccoli
+1f9c4 garlic
+1f9c5 onion
+1f95c peanuts
+1fad8 beans
+1f330 chestnut
+1f35e bread
+1f950 croissant
+1f956 baguette_bread
+1fad3 flatbread
+1f968 pretzel
+1f96f bagel
+1f95e pancakes
+1f9c7 waffle
+1f9c0 cheese_wedge
+1f356 meat_on_bone
+1f357 poultry_leg
+1f969 cut_of_meat
+1f953 bacon
+1f354 hamburger
+1f35f french_fries fries
+1f355 pizza
+1f32d hot_dog hotdog
+1f96a sandwich
+1f32e taco
+1f32f burrito
+1fad4 tamale
+1f959 stuffed_flatbread
+1f9c6 falafel
+1f95a egg
+1f373 cooking fried_egg
+1f958 shallow_pan_of_food
+1f372 pot_of_food stew
+1fad5 fondue
+1f963 bowl_with_spoon
+1f957 green_salad
+1f37f popcorn
+1f9c8 butter
+1f9c2 salt
+1f96b canned_food
+1f371 bento_box bento
+1f358 rice_cracker
+1f359 rice_ball
+1f35a cooked_rice rice
+1f35b curry_rice curry
+1f35c steaming_bowl ramen
+1f35d spaghetti
+1f360 roasted_sweet_potato sweet_potato
+1f362 oden
+1f363 sushi
+1f364 fried_shrimp
+1f365 fish_cake_with_swirl fish_cake
+1f96e moon_cake
+1f361 dango
+1f95f dumpling
+1f960 fortune_cookie
+1f961 takeout_box
+1f366 soft_ice_cream icecream
+1f367 shaved_ice
+1f368 ice_cream
+1f369 doughnut
+1f36a cookie
+1f382 birthday_cake birthday
+1f370 shortcake cake
+1f9c1 cupcake
+1f967 pie
+1f36b chocolate_bar
+1f36c candy
+1f36d lollipop
+1f36e custard
+1f36f honey_pot
+1f37c baby_bottle
+1f95b glass_of_milk
+2615 hot_beverage coffee
+1fad6 teapot
+1f375 teacup_without_handle tea
+1f376 sake
+1f37e bottle_with_popping_cork champagne
+1f377 wine_glass
+1f378 cocktail_glass cocktail
+1f379 tropical_drink
+1f37a beer_mug beer
+1f37b clinking_beer_mugs beers
+1f942 clinking_glasses
+1f943 tumbler_glass
+1fad7 pouring_liquid
+1f964 cup_with_straw
+1f9cb bubble_tea
+1f9c3 beverage_box
+1f9c9 mate mate_drink
+1f9ca ice ice_cube
+1f962 chopsticks
+1f37d fork_and_knife_with_plate knife_fork_plate
+1f374 fork_and_knife
+1f944 spoon
+1f52a kitchen_knife hocho knife
+1fad9 jar
+1f3fa amphora
+1f30d globe_showing_europe-africa earth_africa
+1f30e globe_showing_americas earth_americas
+1f30f globe_showing_asia-australia earth_asia
+1f310 globe_with_meridians
+1f5fa world_map
+1f5fe map_of_japan japan
+1f9ed compass
+1f3d4 snow-capped_mountain snow_capped_mountain
+26f0 mountain
+1f30b volcano
+1f5fb mount_fuji
+1f3d5 camping
+1f3d6 beach_with_umbrella
+1f3dc desert
+1f3dd desert_island
+1f3de national_park
+1f3df stadium
+1f3db classical_building
+1f3d7 building_construction
+1f9f1 brick bricks
+1faa8 rock
+1fab5 wood
+1f6d6 hut
+1f3d8 houses house_buildings
+1f3da derelict_house derelict_house_building
+1f3e0 house
+1f3e1 house_with_garden
+1f3e2 office_building office
+1f3e3 japanese_post_office
+1f3e4 post_office european_post_office
+1f3e5 hospital
+1f3e6 bank
+1f3e8 hotel
+1f3e9 love_hotel
+1f3ea convenience_store
+1f3eb school
+1f3ec department_store
+1f3ed factory
+1f3ef japanese_castle
+1f3f0 castle european_castle
+1f492 wedding
+1f5fc tokyo_tower
+1f5fd statue_of_liberty
+26ea church
+1f54c mosque
+1f6d5 hindu_temple
+1f54d synagogue
+26e9 shinto_shrine
+1f54b kaaba
+26f2 fountain
+26fa tent
+1f301 foggy
+1f303 night_with_stars
+1f3d9 cityscape
+1f304 sunrise_over_mountains
+1f305 sunrise
+1f306 cityscape_at_dusk city_sunset
+1f307 sunset city_sunrise
+1f309 bridge_at_night
+2668 hot_springs hotsprings
+1f3a0 carousel_horse
+1f6dd playground_slide
+1f3a1 ferris_wheel
+1f3a2 roller_coaster
+1f488 barber_pole barber
+1f3aa circus_tent
+1f682 locomotive steam_locomotive
+1f683 railway_car
+1f684 high-speed_train bullettrain_side
+1f685 bullet_train bullettrain_front
+1f686 train train2
+1f687 metro
+1f688 light_rail
+1f689 station
+1f68a tram
+1f69d monorail
+1f69e mountain_railway
+1f68b tram_car
+1f68c bus
+1f68d oncoming_bus
+1f68e trolleybus
+1f690 minibus
+1f691 ambulance
+1f692 fire_engine
+1f693 police_car
+1f694 oncoming_police_car
+1f695 taxi
+1f696 oncoming_taxi
+1f697 automobile car red_car
+1f698 oncoming_automobile
+1f699 sport_utility_vehicle blue_car
+1f6fb pickup_truck
+1f69a delivery_truck truck
+1f69b articulated_lorry
+1f69c tractor
+1f3ce racing_car
+1f3cd motorcycle racing_motorcycle
+1f6f5 motor_scooter
+1f9bd manual_wheelchair
+1f9bc motorized_wheelchair
+1f6fa auto_rickshaw
+1f6b2 bicycle bike
+1f6f4 kick_scooter scooter
+1f6f9 skateboard
+1f6fc roller_skate
+1f68f bus_stop busstop
+1f6e3 motorway
+1f6e4 railway_track
+1f6e2 oil_drum
+26fd fuel_pump fuelpump
+1f6de wheel
+1f6a8 police_car_light rotating_light
+1f6a5 horizontal_traffic_light traffic_light
+1f6a6 vertical_traffic_light
+1f6d1 stop_sign octagonal_sign
+1f6a7 construction
+2693 anchor
+1f6df ring_buoy
+26f5 sailboat boat
+1f6f6 canoe
+1f6a4 speedboat
+1f6f3 passenger_ship
+26f4 ferry
+1f6e5 motor_boat
+1f6a2 ship
+2708 airplane
+1f6e9 small_airplane
+1f6eb airplane_departure
+1f6ec airplane_arrival airplane_arriving
+1fa82 parachute
+1f4ba seat
+1f681 helicopter
+1f69f suspension_railway
+1f6a0 mountain_cableway
+1f6a1 aerial_tramway
+1f6f0 satellite
+1f680 rocket
+1f6f8 flying_saucer
+1f6ce bellhop_bell
+1f9f3 luggage
+231b hourglass_done hourglass
+23f3 hourglass_not_done hourglass_flowing_sand
+231a watch
+23f0 alarm_clock
+23f1 stopwatch
+23f2 timer_clock
+1f570 mantelpiece_clock
+1f55b twelve_oclock clock12
+1f567 twelve-thirty clock1230
+1f550 one_oclock clock1
+1f55c one-thirty clock130
+1f551 two_oclock clock2
+1f55d two-thirty clock230
+1f552 three_oclock clock3
+1f55e three-thirty clock330
+1f553 four_oclock clock4
+1f55f four-thirty clock430
+1f554 five_oclock clock5
+1f560 five-thirty clock530
+1f555 six_oclock clock6
+1f561 six-thirty clock630
+1f556 seven_oclock clock7
+1f562 seven-thirty clock730
+1f557 eight_oclock clock8
+1f563 eight-thirty clock830
+1f558 nine_oclock clock9
+1f564 nine-thirty clock930
+1f559 ten_oclock clock10
+1f565 ten-thirty clock1030
+1f55a eleven_oclock clock11
+1f566 eleven-thirty clock1130
+1f311 new_moon
+1f312 waxing_crescent_moon
+1f313 first_quarter_moon
+1f314 waxing_gibbous_moon moon
+1f315 full_moon
+1f316 waning_gibbous_moon
+1f317 last_quarter_moon
+1f318 waning_crescent_moon
+1f319 crescent_moon
+1f31a new_moon_face new_moon_with_face
+1f31b first_quarter_moon_face first_quarter_moon_with_face
+1f31c last_quarter_moon_face last_quarter_moon_with_face
+1f321 thermometer
+2600 sun sunny
+1f31d full_moon_face full_moon_with_face
+1f31e sun_with_face
+1fa90 ringed_planet
+2b50 star
+1f31f glowing_star star2
+1f320 shooting_star stars
+1f30c milky_way
+2601 cloud
+26c5 sun_behind_cloud partly_sunny
+26c8 cloud_with_lightning_and_rain thunder_cloud_and_rain
+1f324 sun_behind_small_cloud mostly_sunny sun_small_cloud
+1f325 sun_behind_large_cloud barely_sunny
+1f326 sun_behind_rain_cloud partly_sunny_rain
+1f327 cloud_with_rain rain_cloud
+1f328 cloud_with_snow snow_cloud
+1f329 cloud_with_lightning lightning lightning_cloud
+1f32a tornado tornado_cloud
+1f32b fog
+1f32c wind_face wind_blowing_face
+1f300 cyclone
+1f308 rainbow
+1f302 closed_umbrella
+2602 umbrella
+2614 umbrella_with_rain_drops
+26f1 umbrella_on_ground
+26a1 high_voltage zap
+2744 snowflake
+2603 snowman
+26c4 snowman_without_snow
+2604 comet
+1f525 fire
+1f4a7 droplet
+1f30a water_wave ocean
+1f383 jack-o-lantern jack_o_lantern
+1f384 christmas_tree
+1f386 fireworks
+1f387 sparkler
+1f9e8 firecracker
+2728 sparkles
+1f388 balloon
+1f389 party_popper tada
+1f38a confetti_ball
+1f38b tanabata_tree
+1f38d pine_decoration bamboo
+1f38e japanese_dolls dolls
+1f38f carp_streamer flags
+1f390 wind_chime
+1f391 moon_viewing_ceremony rice_scene
+1f9e7 red_envelope
+1f380 ribbon
+1f381 wrapped_gift gift
+1f397 reminder_ribbon
+1f39f admission_tickets
+1f3ab ticket
+1f396 military_medal medal
+1f3c6 trophy
+1f3c5 sports_medal
+1f947 1st_place_medal first_place_medal
+1f948 2nd_place_medal second_place_medal
+1f949 3rd_place_medal third_place_medal
+26bd soccer_ball soccer
+26be baseball
+1f94e softball
+1f3c0 basketball
+1f3d0 volleyball
+1f3c8 american_football football
+1f3c9 rugby_football
+1f3be tennis
+1f94f flying_disc
+1f3b3 bowling
+1f3cf cricket_game cricket_bat_and_ball
+1f3d1 field_hockey field_hockey_stick_and_ball
+1f3d2 ice_hockey ice_hockey_stick_and_puck
+1f94d lacrosse
+1f3d3 ping_pong table_tennis_paddle_and_ball
+1f3f8 badminton badminton_racquet_and_shuttlecock
+1f94a boxing_glove
+1f94b martial_arts_uniform
+1f945 goal_net
+26f3 flag_in_hole golf
+26f8 ice_skate
+1f3a3 fishing_pole fishing_pole_and_fish
+1f93f diving_mask
+1f3bd running_shirt running_shirt_with_sash
+1f3bf skis ski
+1f6f7 sled
+1f94c curling_stone
+1f3af bullseye dart
+1fa80 yo-yo
+1fa81 kite
+1f52b water_pistol gun
+1f3b1 pool_8_ball 8ball
+1f52e crystal_ball
+1fa84 magic_wand
+1f3ae video_game
+1f579 joystick
+1f3b0 slot_machine
+1f3b2 game_die
+1f9e9 puzzle_piece jigsaw
+1f9f8 teddy_bear
+1fa85 piñata pinata
+1faa9 mirror_ball
+1fa86 nesting_dolls
+2660 spade_suit spades
+2665 heart_suit hearts
+2666 diamond_suit diamonds
+2663 club_suit clubs
+265f chess_pawn
+1f0cf joker black_joker
+1f004 mahjong_red_dragon mahjong
+1f3b4 flower_playing_cards
+1f3ad performing_arts
+1f5bc framed_picture frame_with_picture
+1f3a8 artist_palette art
+1f9f5 thread
+1faa1 sewing_needle
+1f9f6 yarn
+1faa2 knot
+1f453 glasses eyeglasses
+1f576 sunglasses dark_sunglasses
+1f97d goggles
+1f97c lab_coat
+1f9ba safety_vest
+1f454 necktie
+1f455 t-shirt shirt tshirt
+1f456 jeans
+1f9e3 scarf
+1f9e4 gloves
+1f9e5 coat
+1f9e6 socks
+1f457 dress
+1f458 kimono
+1f97b sari
+1fa71 one-piece_swimsuit
+1fa72 briefs
+1fa73 shorts
+1f459 bikini
+1f45a womans_clothes
+1f45b purse
+1f45c handbag
+1f45d clutch_bag pouch
+1f6cd shopping_bags
+1f392 backpack school_satchel
+1fa74 thong_sandal
+1f45e mans_shoe shoe
+1f45f running_shoe athletic_shoe
+1f97e hiking_boot
+1f97f flat_shoe womans_flat_shoe
+1f460 high-heeled_shoe high_heel
+1f461 womans_sandal sandal
+1fa70 ballet_shoes
+1f462 womans_boot boot
+1f451 crown
+1f452 womans_hat
+1f3a9 top_hat tophat
+1f393 graduation_cap mortar_board
+1f9e2 billed_cap
+1fa96 military_helmet
+26d1 rescue_workers_helmet helmet_with_white_cross
+1f4ff prayer_beads
+1f484 lipstick
+1f48d ring
+1f48e gem_stone gem
+1f507 muted_speaker mute
+1f508 speaker_low_volume speaker
+1f509 speaker_medium_volume sound
+1f50a speaker_high_volume loud_sound
+1f4e2 loudspeaker
+1f4e3 megaphone mega
+1f4ef postal_horn
+1f514 bell
+1f515 bell_with_slash no_bell
+1f3bc musical_score
+1f3b5 musical_note
+1f3b6 musical_notes notes
+1f399 studio_microphone
+1f39a level_slider
+1f39b control_knobs
+1f3a4 microphone
+1f3a7 headphone headphones
+1f4fb radio
+1f3b7 saxophone
+1f3ba trumpet
+1fa97 accordion
+1f3b8 guitar
+1f3b9 musical_keyboard
+1f3bb violin
+1fa95 banjo
+1f941 drum drum_with_drumsticks
+1fa98 long_drum
+1f4f1 mobile_phone iphone
+1f4f2 mobile_phone_with_arrow calling
+260e telephone phone
+1f4de telephone_receiver
+1f4df pager
+1f4e0 fax_machine fax
+1f50b battery
+1faab low_battery
+1f50c electric_plug
+1f4bb laptop computer
+1f5a5 desktop_computer
+1f5a8 printer
+2328 keyboard
+1f5b1 computer_mouse three_button_mouse
+1f5b2 trackball
+1f4bd computer_disk minidisc
+1f4be floppy_disk
+1f4bf optical_disk cd
+1f4c0 dvd
+1f9ee abacus
+1f3a5 movie_camera
+1f39e film_frames
+1f4fd film_projector
+1f3ac clapper_board clapper
+1f4fa television tv
+1f4f7 camera
+1f4f8 camera_with_flash
+1f4f9 video_camera
+1f4fc videocassette vhs
+1f50d magnifying_glass_tilted_left mag
+1f50e magnifying_glass_tilted_right mag_right
+1f56f candle
+1f4a1 light_bulb bulb
+1f526 flashlight
+1f3ee red_paper_lantern izakaya_lantern lantern
+1fa94 diya_lamp
+1f4d4 notebook_with_decorative_cover
+1f4d5 closed_book
+1f4d6 open_book book
+1f4d7 green_book
+1f4d8 blue_book
+1f4d9 orange_book
+1f4da books
+1f4d3 notebook
+1f4d2 ledger
+1f4c3 page_with_curl
+1f4dc scroll
+1f4c4 page_facing_up
+1f4f0 newspaper
+1f5de rolled-up_newspaper rolled_up_newspaper
+1f4d1 bookmark_tabs
+1f516 bookmark
+1f3f7 label
+1fa99 coin
+1f4b0 money_bag moneybag
+1f4b4 yen_banknote yen
+1f4b5 dollar_banknote dollar
+1f4b6 euro_banknote euro
+1f4b7 pound_banknote pound
+1f4b8 money_with_wings
+1f4b3 credit_card
+1f9fe receipt
+1f4b9 chart_increasing_with_yen chart
+2709 envelope email
+1f4e7 e-mail
+1f4e8 incoming_envelope
+1f4e9 envelope_with_arrow
+1f4e4 outbox_tray
+1f4e5 inbox_tray
+1f4e6 package
+1f4eb closed_mailbox_with_raised_flag mailbox
+1f4ea closed_mailbox_with_lowered_flag mailbox_closed
+1f4ec open_mailbox_with_raised_flag mailbox_with_mail
+1f4ed open_mailbox_with_lowered_flag mailbox_with_no_mail
+1f4ee postbox
+1f5f3 ballot_box_with_ballot
+270f pencil pencil2
+2712 black_nib
+1f58b fountain_pen lower_left_fountain_pen
+1f58a pen lower_left_ballpoint_pen
+1f58c paintbrush lower_left_paintbrush
+1f58d crayon lower_left_crayon
+1f4dd memo
+1f4bc briefcase
+1f4c1 file_folder
+1f4c2 open_file_folder
+1f5c2 card_index_dividers
+1f4c5 calendar date
+1f4c6 tear-off_calendar
+1f5d2 spiral_notepad spiral_note_pad
+1f5d3 spiral_calendar spiral_calendar_pad
+1f4c7 card_index
+1f4c8 chart_increasing chart_with_upwards_trend
+1f4c9 chart_decreasing chart_with_downwards_trend
+1f4ca bar_chart
+1f4cb clipboard
+1f4cc pushpin
+1f4cd round_pushpin
+1f4ce paperclip
+1f587 linked_paperclips
+1f4cf straight_ruler
+1f4d0 triangular_ruler
+2702 scissors
+1f5c3 card_file_box
+1f5c4 file_cabinet
+1f5d1 wastebasket
+1f512 locked lock
+1f513 unlocked unlock
+1f50f locked_with_pen lock_with_ink_pen
+1f510 locked_with_key closed_lock_with_key
+1f511 key
+1f5dd old_key
+1f528 hammer
+1fa93 axe
+26cf pick
+2692 hammer_and_pick
+1f6e0 hammer_and_wrench
+1f5e1 dagger dagger_knife
+2694 crossed_swords
+1f4a3 bomb
+1fa83 boomerang
+1f3f9 bow_and_arrow
+1f6e1 shield
+1fa9a carpentry_saw
+1f527 wrench
+1fa9b screwdriver
+1f529 nut_and_bolt
+2699 gear
+1f5dc clamp compression
+2696 balance_scale scales
+1f9af white_cane probing_cane
+1f517 link
+26d3 chains
+1fa9d hook
+1f9f0 toolbox
+1f9f2 magnet
+1fa9c ladder
+2697 alembic
+1f9ea test_tube
+1f9eb petri_dish
+1f9ec dna
+1f52c microscope
+1f52d telescope
+1f4e1 satellite_antenna
+1f489 syringe
+1fa78 drop_of_blood
+1f48a pill
+1fa79 adhesive_bandage
+1fa7c crutch
+1fa7a stethoscope
+1fa7b x-ray
+1f6aa door
+1f6d7 elevator
+1fa9e mirror
+1fa9f window
+1f6cf bed
+1f6cb couch_and_lamp
+1fa91 chair
+1f6bd toilet
+1faa0 plunger
+1f6bf shower
+1f6c1 bathtub
+1faa4 mouse_trap
+1fa92 razor
+1f9f4 lotion_bottle
+1f9f7 safety_pin
+1f9f9 broom
+1f9fa basket
+1f9fb roll_of_paper
+1faa3 bucket
+1f9fc soap
+1fae7 bubbles
+1faa5 toothbrush
+1f9fd sponge
+1f9ef fire_extinguisher
+1f6d2 shopping_cart shopping_trolley
+1f6ac cigarette smoking
+26b0 coffin
+1faa6 headstone
+26b1 funeral_urn
+1f9ff nazar_amulet
+1faac hamsa
+1f5ff moai moyai
+1faa7 placard
+1faaa identification_card
+1f3e7 atm_sign atm
+1f6ae litter_in_bin_sign put_litter_in_its_place
+1f6b0 potable_water
+267f wheelchair_symbol wheelchair
+1f6b9 mens_room mens
+1f6ba womens_room womens
+1f6bb restroom
+1f6bc baby_symbol
+1f6be water_closet wc
+1f6c2 passport_control
+1f6c3 customs
+1f6c4 baggage_claim
+1f6c5 left_luggage
+26a0 warning
+1f6b8 children_crossing
+26d4 no_entry
+1f6ab prohibited no_entry_sign
+1f6b3 no_bicycles
+1f6ad no_smoking
+1f6af no_littering do_not_litter
+1f6b1 non-potable_water
+1f6b7 no_pedestrians
+1f4f5 no_mobile_phones
+1f51e no_one_under_eighteen underage
+2622 radioactive radioactive_sign
+2623 biohazard biohazard_sign
+2b06 up_arrow arrow_up
+2197 up-right_arrow arrow_upper_right
+27a1 right_arrow arrow_right
+2198 down-right_arrow arrow_lower_right
+2b07 down_arrow arrow_down
+2199 down-left_arrow arrow_lower_left
+2b05 left_arrow arrow_left
+2196 up-left_arrow arrow_upper_left
+2195 up-down_arrow arrow_up_down
+2194 left-right_arrow left_right_arrow
+21a9 right_arrow_curving_left leftwards_arrow_with_hook
+21aa left_arrow_curving_right arrow_right_hook
+2934 right_arrow_curving_up arrow_heading_up
+2935 right_arrow_curving_down arrow_heading_down
+1f503 clockwise_vertical_arrows arrows_clockwise
+1f504 counterclockwise_arrows_button arrows_counterclockwise
+1f519 back_arrow back
+1f51a end_arrow end
+1f51b on!_arrow on
+1f51c soon_arrow soon
+1f51d top_arrow top
+1f6d0 place_of_worship
+269b atom_symbol
+1f549 om om_symbol
+2721 star_of_david
+2638 wheel_of_dharma
+262f yin_yang
+271d latin_cross
+2626 orthodox_cross
+262a star_and_crescent
+262e peace_symbol
+1f54e menorah menorah_with_nine_branches
+1f52f dotted_six-pointed_star six_pointed_star
+2648 aries
+2649 taurus
+264a gemini
+264b cancer
+264c leo
+264d virgo
+264e libra
+264f scorpio scorpius
+2650 sagittarius
+2651 capricorn
+2652 aquarius
+2653 pisces
+26ce ophiuchus
+1f500 shuffle_tracks_button twisted_rightwards_arrows
+1f501 repeat_button repeat
+1f502 repeat_single_button repeat_one
+25b6 play_button arrow_forward
+23e9 fast-forward_button fast_forward
+23ed next_track_button black_right_pointing_double_triangle_with_vertical_bar
+23ef play_or_pause_button black_right_pointing_triangle_with_double_vertical_bar
+25c0 reverse_button arrow_backward
+23ea fast_reverse_button rewind
+23ee last_track_button black_left_pointing_double_triangle_with_vertical_bar
+1f53c upwards_button arrow_up_small
+23eb fast_up_button arrow_double_up
+1f53d downwards_button arrow_down_small
+23ec fast_down_button arrow_double_down
+23f8 pause_button double_vertical_bar
+23f9 stop_button black_square_for_stop
+23fa record_button black_circle_for_record
+23cf eject_button eject
+1f3a6 cinema
+1f505 dim_button low_brightness
+1f506 bright_button high_brightness
+1f4f6 antenna_bars signal_strength
+1f4f3 vibration_mode
+1f4f4 mobile_phone_off
+2640 female_sign
+2642 male_sign
+26a7 transgender_symbol
+2716 multiply heavy_multiplication_x
+2795 plus heavy_plus_sign
+2796 minus heavy_minus_sign
+2797 divide heavy_division_sign
+1f7f0 heavy_equals_sign
+267e infinity
+203c double_exclamation_mark bangbang
+2049 exclamation_question_mark interrobang
+2753 red_question_mark question
+2754 white_question_mark grey_question
+2755 white_exclamation_mark grey_exclamation
+2757 red_exclamation_mark exclamation heavy_exclamation_mark
+3030 wavy_dash
+1f4b1 currency_exchange
+1f4b2 heavy_dollar_sign
+2695 medical_symbol staff_of_aesculapius
+267b recycling_symbol recycle
+269c fleur-de-lis fleur_de_lis
+1f531 trident_emblem trident
+1f4db name_badge
+1f530 japanese_symbol_for_beginner beginner
+2b55 hollow_red_circle o
+2705 check_mark_button white_check_mark
+2611 check_box_with_check ballot_box_with_check
+2714 check_mark heavy_check_mark
+274c cross_mark x
+274e cross_mark_button negative_squared_cross_mark
+27b0 curly_loop
+27bf double_curly_loop loop
+303d part_alternation_mark
+2733 eight-spoked_asterisk eight_spoked_asterisk
+2734 eight-pointed_star eight_pointed_black_star
+2747 sparkle
+2122 trade_mark tm
+1f51f keycap_10 keycap_ten
+1f520 input_latin_uppercase capital_abcd
+1f521 input_latin_lowercase abcd
+1f522 input_numbers 1234
+1f523 input_symbols symbols
+1f524 input_latin_letters abc
+1f170 a_button_(blood_type) a
+1f18e ab_button_(blood_type) ab
+1f171 b_button_(blood_type) b
+1f191 cl_button cl
+1f192 cool_button cool
+1f193 free_button free
+2139 information information_source
+1f194 id_button id
+24c2 circled_m m
+1f195 new_button new
+1f196 ng_button ng
+1f17e o_button_(blood_type) o2
+1f197 ok_button ok
+1f17f p_button parking
+1f198 sos_button sos
+1f199 up!_button up
+1f19a vs_button vs
+1f201 japanese_here_button koko
+1f202 japanese_service_charge_button sa
+1f237 japanese_monthly_amount_button u6708
+1f236 japanese_not_free_of_charge_button u6709
+1f22f japanese_reserved_button u6307
+1f250 japanese_bargain_button ideograph_advantage
+1f239 japanese_discount_button u5272
+1f21a japanese_free_of_charge_button u7121
+1f232 japanese_prohibited_button u7981
+1f251 japanese_acceptable_button accept
+1f238 japanese_application_button u7533
+1f234 japanese_passing_grade_button u5408
+1f233 japanese_vacancy_button u7a7a
+3297 japanese_congratulations_button congratulations
+3299 japanese_secret_button secret
+1f23a japanese_open_for_business_button u55b6
+1f235 japanese_no_vacancy_button u6e80
+1f534 red_circle
+1f7e0 orange_circle large_orange_circle
+1f7e1 yellow_circle large_yellow_circle
+1f7e2 green_circle large_green_circle
+1f535 blue_circle large_blue_circle
+1f7e3 purple_circle large_purple_circle
+1f7e4 brown_circle large_brown_circle
+26ab black_circle
+26aa white_circle
+1f7e5 red_square large_red_square
+1f7e7 orange_square large_orange_square
+1f7e8 yellow_square large_yellow_square
+1f7e9 green_square large_green_square
+1f7e6 blue_square large_blue_square
+1f7ea purple_square large_purple_square
+1f7eb brown_square large_brown_square
+2b1b black_large_square
+2b1c white_large_square
+25fc black_medium_square
+25fb white_medium_square
+25fe black_medium-small_square black_medium_small_square
+25fd white_medium-small_square white_medium_small_square
+25aa black_small_square
+25ab white_small_square
+1f536 large_orange_diamond
+1f537 large_blue_diamond
+1f538 small_orange_diamond
+1f539 small_blue_diamond
+1f53a red_triangle_pointed_up small_red_triangle
+1f53b red_triangle_pointed_down small_red_triangle_down
+1f4a0 diamond_with_a_dot diamond_shape_with_a_dot_inside
+1f518 radio_button
+1f533 white_square_button
+1f532 black_square_button
+1f3c1 chequered_flag checkered_flag
+1f6a9 triangular_flag triangular_flag_on_post
+1f38c crossed_flags
+1f3f4 black_flag waving_black_flag
+1f3f3 white_flag waving_white_flag
+a9 copyright
+ae registered
+1f9b0 red_hair
+1f9b1 curly_hair
+1f9b2 bald
+1f9b3 white_hair

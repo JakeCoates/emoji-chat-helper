@@ -1,0 +1,11 @@
+.gradle/
+build/
+bin/
+*.class
+*.iml
+.idea/
+out/
+# keep gradle/wrapper/gradle-wrapper.jar
+
+# Local tools: the dev client, and the script that builds the emoji data from its sources.
+dev-tools/
