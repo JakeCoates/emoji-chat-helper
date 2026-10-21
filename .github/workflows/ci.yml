@@ -86,7 +86,8 @@ jobs:
         run: |
           set -eu
           printf 'repository=%s\ncommit=%s\n' "$REPOSITORY" "$COMMIT" > plugin-hub/plugins/emoji-chat-helper
-          git -C plugin-hub -c user.name=ci -c user.email=ci@localhost commit -q -am "Test emoji-chat-helper at $COMMIT"
+          git -C plugin-hub add plugins/emoji-chat-helper
+          git -C plugin-hub -c user.name=ci -c user.email=ci@localhost commit -q -m "Test emoji-chat-helper at $COMMIT"
       - name: Package
         env:
           FORCE_BUILD: emoji-chat-helper
