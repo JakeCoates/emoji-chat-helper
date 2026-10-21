@@ -19,7 +19,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "suggest",
 		name = "List matches while typing",
-		description = "Lists emoji that match what you type: a name after a colon, like :swe, or the start of an emoticon, like :) or Xd. A lone colon lists the emoticons that start with one. It only shows them: you type the rest yourself.",
+		description = "Lists emoji matching what you're typing: a name after a colon, like :smil, or an emoticon, like :) or Xd. Slack names such as :sweat_smile find emoji too. You type the rest yourself.",
 		position = 0
 	)
 	default boolean suggest()
@@ -27,7 +27,6 @@ public interface EmojiChatHelperConfig extends Config
 		return true;
 	}
 
-	/** Where the list of matches is drawn. */
 	enum ListPosition
 	{
 		ABOVE_CHATBOX("Above chatbox"),
@@ -51,7 +50,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "listPosition",
 		name = "List position",
-		description = "Where the list of matches shows: above the chatbox, so it covers none of the chat; just above the line you type in; or anywhere you drag it. To move it, type a colon so it shows, then hold Alt and drag it.",
+		description = "Where the list shows. To move it in Anywhere mode, type a colon so it appears, then Alt+drag it.",
 		position = 1
 	)
 	default ListPosition listPosition()
@@ -62,7 +61,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "maxSuggestions",
 		name = "Matches listed",
-		description = "How many matches the list shows at most.",
+		description = "Most matches to list.",
 		position = 2
 	)
 	@Range(min = 1, max = 10)
@@ -73,8 +72,8 @@ public interface EmojiChatHelperConfig extends Config
 
 	@ConfigItem(
 		keyName = "showOtherName",
-		name = "Show other name",
-		description = "Shows each match's other name beside it, in grey: the Slack name that found it, or RuneLite's name for a Slack name.",
+		name = "Show emoticon names",
+		description = "Shows each emoticon's emoji name beside it.",
 		position = 3
 	)
 	default boolean showOtherName()
@@ -85,7 +84,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "showInChat",
 		name = "Emoji in chat",
-		description = "Shows :names: in chat and over players' heads as emoji.",
+		description = "Shows :names: in chat and overhead text as emoji, as RuneLite's Emojis plugin does.",
 		position = 4
 	)
 	default boolean showInChat()
@@ -94,21 +93,10 @@ public interface EmojiChatHelperConfig extends Config
 	}
 
 	@ConfigItem(
-		keyName = "runeLiteNamesOnly",
-		name = "Only names others see",
-		description = "Shows emoji only for RuneLite's names, which players with RuneLite's Emojis plugin see as emoji too, and lists those names to type. A Slack name still finds its emoji in the list. Turned off, Slack names show as emoji as well, but only to players with this plugin.",
-		position = 5
-	)
-	default boolean runeLiteNamesOnly()
-	{
-		return true;
-	}
-
-	@ConfigItem(
 		keyName = "emoticonsOnly",
 		name = "Only emoticons",
-		description = "Lists only emoji that RuneLite has a short emoticon for, like Xd or <3, with the emoticon to type. A name still finds them.",
-		position = 6
+		description = "Only lists emoji that have an emoticon, like Xd or <3, and shows the emoticon to type.",
+		position = 5
 	)
 	default boolean emoticonsOnly()
 	{
@@ -118,7 +106,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "font",
 		name = "Font",
-		description = "The list's font and its size.",
+		description = "Font and size of the list's text.",
 		section = styleSection,
 		position = 100
 	)
@@ -130,7 +118,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "emojiScale",
 		name = "Emoji size",
-		description = "How many times their own 13 pixels the emoji are drawn. Whole times keep their pixels sharp.",
+		description = "Scale of the 13 pixel emoji pictures.",
 		section = styleSection,
 		position = 101
 	)
@@ -143,7 +131,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "padding",
 		name = "Padding",
-		description = "Space between the list's edge and what is in it.",
+		description = "Space inside the list's border.",
 		section = styleSection,
 		position = 102
 	)
@@ -157,7 +145,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "rowSpacing",
 		name = "Row spacing",
-		description = "Extra space between matches.",
+		description = "Extra space between rows.",
 		section = styleSection,
 		position = 103
 	)
@@ -171,7 +159,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "textShadow",
 		name = "Text shadow",
-		description = "Draws text with the game's black drop shadow.",
+		description = "Draws text with a drop shadow, like the game's.",
 		section = styleSection,
 		position = 104
 	)
@@ -184,7 +172,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "backgroundColour",
 		name = "Background",
-		description = "The list's background. Its alpha sets how see-through it is.",
+		description = "Background colour. Lower its alpha to make the list see-through.",
 		section = styleSection,
 		position = 105
 	)
@@ -197,7 +185,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "borderColour",
 		name = "Border",
-		description = "The line around the list. Make it fully see-through for none.",
+		description = "Border colour. Set its alpha to 0 to hide the border.",
 		section = styleSection,
 		position = 106
 	)
@@ -210,7 +198,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "leftColour",
 		name = "Left to type",
-		description = "What is left to type of a match, closing colon included.",
+		description = "The part of a match still to type.",
 		section = styleSection,
 		position = 107
 	)
@@ -223,7 +211,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "typedColour",
 		name = "Already typed",
-		description = "What is already typed of a match.",
+		description = "The part of a match already typed.",
 		section = styleSection,
 		position = 108
 	)
@@ -235,8 +223,8 @@ public interface EmojiChatHelperConfig extends Config
 	@Alpha
 	@ConfigItem(
 		keyName = "nameColour",
-		name = "Name to retype",
-		description = "A match to type from its start, as one found by a later word or with a typo is.",
+		name = "Other matches",
+		description = "Matches that don't start with what you've typed, such as typo matches.",
 		section = styleSection,
 		position = 109
 	)
@@ -249,7 +237,7 @@ public interface EmojiChatHelperConfig extends Config
 	@ConfigItem(
 		keyName = "emoticonColour",
 		name = "Emoticon",
-		description = "RuneLite's emoticon beside a name, like Xd.",
+		description = "An emoticon shown beside a name, like Xd.",
 		section = styleSection,
 		position = 110
 	)
@@ -261,8 +249,8 @@ public interface EmojiChatHelperConfig extends Config
 	@Alpha
 	@ConfigItem(
 		keyName = "otherNameColour",
-		name = "Other name",
-		description = "The match's other name, beside it.",
+		name = "Emoticon name",
+		description = "The emoji name shown beside an emoticon.",
 		section = styleSection,
 		position = 111
 	)

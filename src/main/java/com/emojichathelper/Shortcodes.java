@@ -2,18 +2,14 @@ package com.emojichathelper;
 
 import java.util.function.*;
 
-/** Finding :names: in text: the one being typed, and the finished ones in a chat message. */
+/** Text parsing for :names:. */
 final class Shortcodes
 {
 	private Shortcodes()
 	{
 	}
 
-	/**
-	 * The word being typed at the end of the chat input, as typed: ":swe" in "hi :swe". Null when
-	 * the input is empty or ends in a space. {@link EmojiIndex#search} decides whether it is a name
-	 * or an emoticon being typed.
-	 */
+	/** The last word of the input, such as ":swe" in "hi :swe", or null if it ends in a space. */
 	static String lastWord(String typed)
 	{
 		if (typed == null || typed.isEmpty() || isSpace(typed.charAt(typed.length() - 1)))
@@ -29,11 +25,10 @@ final class Shortcodes
 	}
 
 	/**
-	 * The message with each :name: that {@code icons} knows replaced by its chat image; null if
-	 * none was. Read as RuneLite's Emojis plugin reads it, so a message shows the same emoji to
-	 * both: a name runs from one colon to the next, and a space ends it.
+	 * Replaces each known :name: with its chat icon, parsing as RuneLite's Emojis plugin does: a
+	 * name runs from one colon to the next and can't contain a space. Returns null if nothing changed.
 	 *
-	 * @param icons the chat image index for a name, or -1 for one that is not an emoji
+	 * @param icons the icon index for a name, or -1 if it isn't one
 	 */
 	static String replace(String message, ToIntFunction<String> icons)
 	{
@@ -67,13 +62,13 @@ final class Shortcodes
 					continue;
 				}
 			}
-			// Not a name: this colon may open the next one.
+			// Not a name, but this colon may start the next one.
 			open = i;
 		}
 		return out == null ? null : out.append(message, copied, message.length()).toString();
 	}
 
-	/** Whether a character ends a word: whitespace, or the game's non-breaking space. */
+	/** Whitespace, including the game's non-breaking space. */
 	static boolean isSpace(char c)
 	{
 		return Character.isWhitespace(c) || c == '\u00a0';

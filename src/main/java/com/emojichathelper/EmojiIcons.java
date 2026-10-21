@@ -6,14 +6,14 @@ import javax.inject.*;
 import net.runelite.client.game.*;
 import net.runelite.client.util.*;
 
-/** Each emoji's 13x13 picture, cut from one sheet, and its chat image. Client thread. */
+/** Emoji pictures, cut from one sheet, and their chat icons. Client thread. */
 @Singleton
 class EmojiIcons
 {
 	static final String SHEET = "emoji.png";
-	/** Pictures are this many pixels square, as the game's chat images are. */
+	/** Picture size in pixels, the same as the game's chat icons. */
 	static final int SIZE = 13;
-	/** Pictures in a row of the sheet. */
+	/** Pictures per row of the sheet. */
 	static final int COLUMNS = 32;
 
 	@Inject
@@ -21,10 +21,7 @@ class EmojiIcons
 
 	private BufferedImage sheet;
 	private final Map<EmojiIndex.Emoji, BufferedImage> pictures = new HashMap<>();
-	/**
-	 * Chat image ids, kept while the plugin is turned off and on again: the client has no way to
-	 * give one back, so registering again would only use up more.
-	 */
+	/** Kept across plugin restarts, as chat icons can't be unregistered. */
 	private final Map<EmojiIndex.Emoji, Integer> chatIcons = new HashMap<>();
 
 	BufferedImage picture(EmojiIndex.Emoji emoji)
@@ -41,7 +38,7 @@ class EmojiIcons
 		});
 	}
 
-	/** The index an {@code <img=>} tag takes to show the emoji; -1 while the client has none to give. */
+	/** The index for an {@code <img=>} tag showing the emoji, or -1 if icons aren't loaded yet. */
 	int chatIcon(EmojiIndex.Emoji emoji)
 	{
 		int id = chatIcons.computeIfAbsent(emoji, e -> chatIconManager.registerChatIcon(picture(e)));

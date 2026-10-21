@@ -6,7 +6,7 @@ The `preview-*.png` files are the list drawn by the plugin's own code, outside t
 
 | File | Shows |
 |---|---|
-| `preview-search.png` | The list while typing `:swe` |
+| `preview-search.png` | The list while typing `:smil` |
 | `preview-colon.png` | A colon on its own, listing emoticons |
 | `preview-emoticon.png` | Typing `Xd` |
 | `preview-emoticons-only.png` | `:smil` with **Only emoticons** on |

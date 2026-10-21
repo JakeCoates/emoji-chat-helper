@@ -5,9 +5,8 @@ import javax.inject.*;
 import net.runelite.client.ui.overlay.*;
 
 /**
- * Draws the {@link ShortcodeList} where the player puts it: Alt and drag it, as any RuneLite
- * overlay, to anywhere or one of RuneLite's spots. It starts above the right of the chatbox. It
- * shows only while there are matches, so type a colon to see it to move it.
+ * Draws the {@link ShortcodeList} as a normal overlay the player can Alt+drag. It is only visible
+ * while there are matches.
  */
 class MovableShortcodeOverlay extends Overlay
 {

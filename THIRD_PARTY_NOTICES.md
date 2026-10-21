@@ -18,7 +18,7 @@ The first two columns of `src/main/resources/com/emojichathelper/emoji.txt`, eac
 
 ## emoji-data
 
-The Slack names in `src/main/resources/com/emojichathelper/emoji.txt` come from emoji-data (https://github.com/iamcal/emoji-data):
+The Slack names in `src/main/resources/com/emojichathelper/emoji.txt`, used only as search keywords, and the order of `emoji.txt` and `emoji.png`, which puts common faces first, come from emoji-data (https://github.com/iamcal/emoji-data):
 
 The MIT License (MIT)
 

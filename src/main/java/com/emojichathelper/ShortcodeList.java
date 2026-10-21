@@ -7,18 +7,16 @@ import javax.inject.*;
 import lombok.*;
 
 /**
- * The emoji matching the word being typed, laid out once each time the word or the style changes,
- * and drawn by whichever overlay {@link EmojiChatHelperConfig#listPosition} picks. It only shows
- * them: nothing here types into the chatbox, which RuneLite does not allow a plugin to do. Client
- * thread.
+ * The list of matches for the word being typed. Rows are laid out when the matches or style
+ * change and measured on the next draw, so drawing each frame does no extra work. Client thread.
  */
 @Singleton
 class ShortcodeList
 {
-	/** Between a picture and its name, and a name and the other name. */
+	/** Space after the picture and between the parts of a row. */
 	private static final int GAP = 5;
 
-	/** How the list looks: the settings it is drawn with, read once each time they change. */
+	/** A snapshot of the style settings, taken when they change. */
 	static final class Style
 	{
 		final Font font;
@@ -26,14 +24,14 @@ class ShortcodeList
 		final int padding;
 		final int rowSpacing;
 		final boolean shadow;
-		final boolean otherName;
+		final boolean emoticonNames;
 		final Color background;
 		final Color border;
 		final Color left;
 		final Color typed;
 		final Color name;
 		final Color emoticon;
-		final Color other;
+		final Color emoticonName;
 
 		Style(EmojiChatHelperConfig config)
 		{
@@ -42,18 +40,18 @@ class ShortcodeList
 			padding = config.padding();
 			rowSpacing = config.rowSpacing();
 			shadow = config.textShadow();
-			otherName = config.showOtherName();
+			emoticonNames = config.showOtherName();
 			background = config.backgroundColour();
 			border = config.borderColour();
 			left = config.leftColour();
 			typed = config.typedColour();
 			name = config.nameColour();
 			emoticon = config.emoticonColour();
-			other = config.otherNameColour();
+			emoticonName = config.otherNameColour();
 		}
 	}
 
-	/** A piece of a row's text, in its colour, and the space after it; its width once measured. */
+	/** One piece of text in a row, and the space after it. */
 	@RequiredArgsConstructor
 	private static final class Part
 	{
@@ -73,16 +71,16 @@ class ShortcodeList
 
 	private final EmojiIcons icons;
 
-	/** The word typed so far, as ":swe"; null for none. */
+	/** The word the matches are for, such as ":swe"; null for none. */
 	@Getter
 	private String word;
-	/** Whether it is typed in the private message prompt rather than the chat input. */
+	/** Whether the word is in the private message prompt. */
 	@Getter
 	private boolean prompt;
 	private List<EmojiIndex.Match> matches = Collections.emptyList();
 	private Style style;
 	private List<Row> rows = Collections.emptyList();
-	/** Null until measured, in the style's font. */
+	/** Null until measured. */
 	private Dimension size;
 	private int rowHeight;
 	private int textY;
@@ -112,7 +110,10 @@ class ShortcodeList
 		return rows.isEmpty();
 	}
 
-	/** Each match's row: what to type, split into what is typed and what is left, then its emoticon and other name. */
+	/**
+	 * Builds each row: what to type, split into the typed and remaining parts, then the emoticon
+	 * for a name or the name for an emoticon.
+	 */
 	private void layOut()
 	{
 		size = null;
@@ -124,7 +125,7 @@ class ShortcodeList
 		List<Row> laidOut = new ArrayList<>(matches.size());
 		for (EmojiIndex.Match match : matches)
 		{
-			List<Part> parts = new ArrayList<>(4);
+			List<Part> parts = new ArrayList<>(3);
 			String form = match.typedForm();
 			String left = match.left(word);
 			if (left == null)
@@ -133,19 +134,16 @@ class ShortcodeList
 			}
 			else
 			{
-				// No space between what is typed and what is left: they read as one.
 				parts.add(part(form.substring(0, form.length() - left.length()), style.typed, 0));
 				parts.add(part(left, style.left, GAP));
 			}
-			// An emoticon match shows its emoticon as what to type; a name match shows it here.
 			if (!match.emoticon && match.emoji.emoticon != null)
 			{
 				parts.add(part(match.emoji.emoticon, style.emoticon, GAP));
 			}
-			String other = style.otherName ? match.otherName() : null;
-			if (other != null)
+			else if (match.emoticon && style.emoticonNames)
 			{
-				parts.add(part(other, style.other, GAP));
+				parts.add(part(match.emoji.name, style.emoticonName, GAP));
 			}
 			laidOut.add(new Row(match.emoji, parts));
 		}
@@ -157,7 +155,7 @@ class ShortcodeList
 		return new Part(text, colour, style.shadow ? new Color(0, 0, 0, colour.getAlpha()) : null, gap);
 	}
 
-	/** How big the list is, measured the first time it is drawn after a change. */
+	/** The list's size, measured on the first call after a change. */
 	Dimension size(Graphics2D g)
 	{
 		FontMetrics metrics = font(g);
@@ -183,7 +181,7 @@ class ShortcodeList
 		return size;
 	}
 
-	/** Draws the list with its top left at x, y. */
+	/** Draws the list with its top left corner at x, y. */
 	void paint(Graphics2D g, int x, int y)
 	{
 		Dimension size = size(g);
@@ -192,7 +190,7 @@ class ShortcodeList
 		g.setColor(style.border);
 		g.drawRect(x, y, size.width - 1, size.height - 1);
 
-		// Scaled up, the emoji keep their pixels sharp.
+		// Keep pixel art sharp when scaled up.
 		g.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_NEAREST_NEIGHBOR);
 		int top = y + style.padding;
 		int pictureY = (rowHeight - style.rowSpacing - style.emoji) / 2;
@@ -215,7 +213,7 @@ class ShortcodeList
 		}
 	}
 
-	/** Sets the style's font on {@code g}, smoothed unless it is one of the game's pixel fonts. */
+	/** Sets the font, antialiased unless it's one of the game's pixel fonts. */
 	private FontMetrics font(Graphics2D g)
 	{
 		g.setFont(style.font);

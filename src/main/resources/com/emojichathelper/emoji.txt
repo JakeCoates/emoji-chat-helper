@@ -1,4 +1,4 @@
-# codepoint, RuneLite's name, Slack's names. Built by dev-tools/BuildEmojiData.java
+# codepoint, RuneLite's name, then Slack's names (search only). Built by dev-tools/BuildEmojiData.java
 1f600 grinning_face grinning
 1f603 grinning_face_with_big_eyes smiley
 1f604 grinning_face_with_smiling_eyes smile

@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
-/** Finding the name being typed, and the finished names in a message. */
 public class ShortcodesTest
 {
 	private static final Map<String, Integer> ICONS = new HashMap<>();
@@ -13,7 +12,7 @@ public class ShortcodesTest
 	static
 	{
 		ICONS.put("joy", 1);
-		ICONS.put("sweat_smile", 2);
+		ICONS.put("fire", 2);
 		ICONS.put("+1", 3);
 	}
 
@@ -37,7 +36,7 @@ public class ShortcodesTest
 		assertNull(Shortcodes.lastWord(null));
 		assertNull(Shortcodes.lastWord(""));
 		assertNull(Shortcodes.lastWord("hi :swe "));
-		// The game's non-breaking space ends a word too, as it does a name in chat.
+		// The game's non-breaking space counts as a space.
 		assertNull(Shortcodes.lastWord("hi :swe" + (char) 0xa0));
 		assertEquals(":swe", Shortcodes.lastWord("hi" + (char) 0xa0 + ":swe"));
 	}
@@ -47,7 +46,7 @@ public class ShortcodesTest
 	{
 		assertEquals("<img=1>", replace(":joy:"));
 		assertEquals("lol <img=1> gz <img=3>", replace("lol :joy: gz :+1:"));
-		assertEquals("<img=1><img=2>", replace(":joy::sweat_smile:"));
+		assertEquals("<img=1><img=2>", replace(":joy::fire:"));
 	}
 
 	@Test
@@ -61,7 +60,6 @@ public class ShortcodesTest
 	public void aSpaceEndsAName()
 	{
 		assertNull(replace(":joy :"));
-		// The game's non-breaking space too.
 		assertNull(replace(":joy" + (char) 0xa0 + ":"));
 		assertEquals("a: b <img=1>", replace("a: b :joy:"));
 	}

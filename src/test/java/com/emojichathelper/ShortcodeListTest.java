@@ -11,10 +11,8 @@ import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
-/** The list of matches: laid out once, measured to fit what it draws. */
 public class ShortcodeListTest
 {
-	/** The settings' defaults. */
 	private static final EmojiChatHelperConfig DEFAULTS = new EmojiChatHelperConfig()
 	{
 	};
@@ -36,7 +34,7 @@ public class ShortcodeListTest
 
 	private List<EmojiIndex.Match> show(String word)
 	{
-		List<EmojiIndex.Match> matches = index.search(word, 6, true, false);
+		List<EmojiIndex.Match> matches = index.search(word, 6, false);
 		list.show(word, false, matches);
 		return matches;
 	}
@@ -50,39 +48,42 @@ public class ShortcodeListTest
 	}
 
 	@Test
-	public void theListFitsItsWidestRowAndEveryRow()
+	public void sizeFitsTheWidestRowAndAllRows()
 	{
-		List<EmojiIndex.Match> matches = show(":swe");
-		Dimension size = list.size(g);
-		FontMetrics metrics = g.getFontMetrics();
-
-		int widest = 0;
-		for (EmojiIndex.Match match : matches)
+		// ":s" lists names; ":" lists emoticons, which show their name beside them.
+		for (String word : new String[]{":s", ":"})
 		{
-			// What is typed and what is left run together; then the emoticon and the other name, each after a gap.
-			int row = metrics.stringWidth(match.typedForm());
-			if (match.emoji.emoticon != null)
-			{
-				row += GAP + metrics.stringWidth(match.emoji.emoticon);
-			}
-			if (match.otherName() != null)
-			{
-				row += GAP + metrics.stringWidth(match.otherName());
-			}
-			widest = Math.max(widest, row);
-		}
-		int padding = DEFAULTS.padding();
-		int emoji = EmojiIcons.SIZE;
-		assertEquals(padding + emoji + GAP + widest + padding, size.width);
+			List<EmojiIndex.Match> matches = show(word);
+			Dimension size = list.size(g);
+			FontMetrics metrics = g.getFontMetrics();
 
-		int rowHeight = Math.max(metrics.getAscent() + metrics.getDescent(), emoji) + DEFAULTS.rowSpacing();
-		assertEquals(padding + matches.size() * rowHeight - DEFAULTS.rowSpacing() + padding, size.height);
+			int widest = 0;
+			for (EmojiIndex.Match match : matches)
+			{
+				int row = metrics.stringWidth(match.typedForm());
+				if (!match.emoticon && match.emoji.emoticon != null)
+				{
+					row += GAP + metrics.stringWidth(match.emoji.emoticon);
+				}
+				else if (match.emoticon)
+				{
+					row += GAP + metrics.stringWidth(match.emoji.name);
+				}
+				widest = Math.max(widest, row);
+			}
+			int padding = DEFAULTS.padding();
+			int emoji = EmojiIcons.SIZE;
+			assertEquals(word, padding + emoji + GAP + widest + padding, size.width);
+
+			int rowHeight = Math.max(metrics.getAscent() + metrics.getDescent(), emoji) + DEFAULTS.rowSpacing();
+			assertEquals(word, padding + matches.size() * rowHeight - DEFAULTS.rowSpacing() + padding, size.height);
+		}
 	}
 
 	@Test
 	public void anEmoticonTypedInFullStillDraws()
 	{
-		// Nothing is left of it to type, an empty part.
+		// Nothing is left to type, so the remaining part is empty.
 		show("Xd");
 		list.paint(g, 0, 0);
 		assertTrue(list.size(g).width > 0);
@@ -111,8 +112,8 @@ public class ShortcodeListTest
 	@Test
 	public void everyStyleDraws()
 	{
-		show(":smile");
-		int withOtherNames = list.size(g).width;
+		show(":");
+		int withNames = list.size(g).width;
 		list.restyle(new ShortcodeList.Style(new EmojiChatHelperConfig()
 		{
 			@Override
@@ -134,6 +135,6 @@ public class ShortcodeListTest
 			}
 		}));
 		list.paint(g, 10, 10);
-		assertTrue(list.size(g).width < withOtherNames);
+		assertTrue(list.size(g).width < withNames);
 	}
 }

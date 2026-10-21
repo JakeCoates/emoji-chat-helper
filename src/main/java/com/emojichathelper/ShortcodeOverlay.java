@@ -8,13 +8,10 @@ import net.runelite.api.gameval.*;
 import net.runelite.api.widgets.Widget;
 import net.runelite.client.ui.overlay.*;
 
-/** Draws the {@link ShortcodeList} just above the chatbox or the line being typed in, following it. */
+/** Draws the {@link ShortcodeList} above the chatbox or the chat input. */
 class ShortcodeOverlay extends Overlay
 {
-	/**
-	 * Above the chatbox, the first shown: the chat lines, so it covers none of the chat; then the
-	 * chat input or the private message prompt, while the chat lines are closed.
-	 */
+	/** Anchors in order of preference; the later ones are for when the chat is collapsed. */
 	private static final int[] ABOVE_CHATBOX = {InterfaceID.Chatbox.CHATAREA, InterfaceID.Chatbox.INPUT, InterfaceID.Chatbox.MES_LAYER};
 	private static final int[] ABOVE_PROMPT = {InterfaceID.Chatbox.MES_TEXT2, InterfaceID.Chatbox.MES_LAYER};
 	private static final int[] ABOVE_INPUT = {InterfaceID.Chatbox.INPUT};
@@ -22,7 +19,7 @@ class ShortcodeOverlay extends Overlay
 	private final Client client;
 	private final ShortcodeList list;
 
-	/** Above the line being typed in rather than above the chatbox. */
+	/** Anchor to the input line rather than the whole chatbox. */
 	@Setter
 	private boolean aboveInput;
 
@@ -48,13 +45,13 @@ class ShortcodeOverlay extends Overlay
 			return null;
 		}
 		Dimension size = list.size(g);
-		// Kept on the game's screen, as a long name could take it past the right edge.
+		// Keep it on screen.
 		int x = Math.max(0, Math.min(at.x, client.getCanvasWidth() - size.width));
 		list.paint(g, x, Math.max(0, at.y - size.height - 2));
 		return null;
 	}
 
-	/** The first of the widgets shown; null when none is. */
+	/** The bounds of the first visible widget, or null. */
 	private Rectangle anchor(int[] widgets)
 	{
 		for (int id : widgets)

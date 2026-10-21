@@ -16,21 +16,18 @@ import net.runelite.client.plugins.*;
 import net.runelite.client.ui.overlay.*;
 
 /**
- * Slack and Discord style :names: for emoji. Typing one lists the emoji whose names match, and
- * one in chat or over a player's head shows as the emoji.
- *
- * <p>It takes RuneLite's names as well as Slack's, and reads a message as RuneLite's Emojis plugin
- * does, so the two show players the same emoji. Nothing here types into the chatbox or changes
- * what is sent: the list only shows names, and only this player sees the emoji it draws.
+ * Lists matching emoji while a :name: or emoticon is typed, and shows :names: in chat as emoji.
+ * It uses RuneLite's own emoji names, so what it shows matches RuneLite's Emojis plugin. It never
+ * types into the chatbox or changes what is sent.
  */
 @PluginDescriptor(
 	name = "Emoji Chat Helper",
-	description = "Type emoji in chat the Slack and Discord way: a list of matching emoji, names and emoticons while you type a :name:",
-	tags = {"emoji", "emojis", "chat", "shortcode", "slack", "discord", "smiley", "emoticon", "helper"}
+	description = "Search RuneLite's emoji and emoticons as you type a :name: in chat, the way Slack and Discord do",
+	tags = {"emoji", "emojis", "chat", "shortcode", "search", "smiley", "emoticon", "helper"}
 )
 public class EmojiChatHelperPlugin extends Plugin
 {
-	/** What the Key Remapping plugin shows in the chat input while typing moves the camera. */
+	/** Shown in the chat input by the Key Remapping plugin while typing is off. */
 	private static final String PRESS_ENTER = "Press Enter to Chat";
 
 	@Inject
@@ -60,10 +57,9 @@ public class EmojiChatHelperPlugin extends Plugin
 	@Inject
 	private MovableShortcodeOverlay movableOverlay;
 
-	// The settings read on the client thread's hot paths, copied by applyConfig. Client thread.
+	// Copies of settings read on the client thread every tick and every message.
 	private boolean suggest;
 	private int maxSuggestions;
-	private boolean runeLiteNamesOnly;
 	private boolean emoticonsOnly;
 	private boolean showInChat;
 
@@ -91,27 +87,28 @@ public class EmojiChatHelperPlugin extends Plugin
 	@Subscribe
 	public void onConfigChanged(ConfigChanged event)
 	{
-		// Settings change on the Swing thread; the list is drawn and listed on the client thread.
+		// Config changes arrive on the Swing thread; the list lives on the client thread.
 		if (EmojiChatHelperConfig.GROUP.equals(event.getGroup()))
 		{
 			clientThread.invoke(this::applyConfig);
 		}
 	}
 
-	/** Restyles the list, puts it where the settings say, and lists again with what they now say. Client thread. */
 	private void applyConfig()
 	{
 		suggest = config.suggest();
 		maxSuggestions = config.maxSuggestions();
-		runeLiteNamesOnly = config.runeLiteNamesOnly();
 		emoticonsOnly = config.emoticonsOnly();
 		showInChat = config.showInChat();
 		list.restyle(new ShortcodeList.Style(config));
+
 		EmojiChatHelperConfig.ListPosition position = config.listPosition();
 		overlay.setAboveInput(position == EmojiChatHelperConfig.ListPosition.ABOVE_INPUT);
 		overlayManager.remove(overlay);
 		overlayManager.remove(movableOverlay);
 		overlayManager.add(position == EmojiChatHelperConfig.ListPosition.MOVABLE ? movableOverlay : overlay);
+
+		// Search again on the next tick with the new settings.
 		list.show(null, false, Collections.emptyList());
 	}
 
@@ -135,15 +132,10 @@ public class EmojiChatHelperPlugin extends Plugin
 		}
 		if (!Objects.equals(word, list.getWord()) || prompt != list.isPrompt())
 		{
-			list.show(word, prompt, word == null ? Collections.emptyList()
-				: index.search(word, maxSuggestions, runeLiteNamesOnly, emoticonsOnly));
+			list.show(word, prompt, word == null ? Collections.emptyList() : index.search(word, maxSuggestions, emoticonsOnly));
 		}
 	}
 
-	/**
-	 * Whether the chat input is shown and taking text. Other prompts, such as a bank search, are
-	 * left out by the caller.
-	 */
 	private boolean chatInputTakesText()
 	{
 		Widget input = client.getWidget(InterfaceID.Chatbox.INPUT);
@@ -157,7 +149,7 @@ public class EmojiChatHelperPlugin extends Plugin
 		{
 			return;
 		}
-		// The kinds RuneLite's Emojis plugin reads: what players say.
+		// The same message types RuneLite's Emojis plugin handles.
 		switch (event.getType())
 		{
 			case PUBLICCHAT:
@@ -195,10 +187,10 @@ public class EmojiChatHelperPlugin extends Plugin
 		}
 	}
 
-	/** The chat image index for an emoji's name; -1 if it is not one, or is a Slack name that only this plugin would show. */
+	/** The chat icon index for an emoji name, or -1 if it isn't one. */
 	private int chatIcon(String name)
 	{
-		EmojiIndex.Emoji emoji = runeLiteNamesOnly ? index.findRuneLiteName(name) : index.find(name);
+		EmojiIndex.Emoji emoji = index.find(name);
 		return emoji == null ? -1 : icons.chatIcon(emoji);
 	}
 }
