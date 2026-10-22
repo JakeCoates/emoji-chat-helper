@@ -1,9 +1,11 @@
 package com.emojichathelper;
 
-import com.google.common.io.CharStreams;
-import java.io.*;
-import java.nio.charset.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UncheckedIOException;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
+import java.util.stream.Collectors;
 import javax.inject.*;
 import lombok.*;
 
@@ -95,9 +97,9 @@ class EmojiIndex
 			{
 				throw new IOException(file + " is missing");
 			}
-			List<String> lines = CharStreams.readLines(new InputStreamReader(in, StandardCharsets.UTF_8));
-			lines.removeIf(line -> line.isEmpty() || line.startsWith("#"));
-			return lines;
+			return new String(in.readAllBytes(), StandardCharsets.UTF_8).lines()
+				.filter(line -> !line.isEmpty() && !line.startsWith("#"))
+				.collect(Collectors.toList());
 		}
 		catch (IOException e)
 		{
