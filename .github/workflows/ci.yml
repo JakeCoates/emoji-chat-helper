@@ -1,6 +1,3 @@
-# Checks every push and pull request the way the Plugin Hub will: builds and tests the plugin, runs the
-# hub's own packager on it, keeps it under the review bot's token limit, and looks for what reviewers
-# have sent plugins back for. Runs only on GitHub; nothing here ships with the plugin.
 name: CI
 
 on:
@@ -10,6 +7,11 @@ on:
 
 permissions:
   contents: read
+
+env:
+  PLUGIN: emoji-chat-helper
+  PACKAGER_URL: https://github.com/runelite/plugin-hub-tooling/releases/download/v5/bundle.tar.zst
+  PACKAGER_SHA256: 5d206634b17c92fcf78c11b871b602832822e2b6d3d199caff734cae8ef6b3f1
 
 jobs:
   build:
@@ -25,24 +27,17 @@ jobs:
           cache: gradle
       - run: chmod +x gradlew && ./gradlew build --no-daemon
 
-  checks:
-    name: Review checks
+  lint:
+    name: Lint
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
-      - run: pip install tiktoken
-      - name: Review bot token budget
-        run: python .github/scripts/count_tokens.py
-      - name: Hub review lint
-        if: ${{ !cancelled() }}
-        run: python .github/scripts/hub_lint.py
+      - run: python .github/scripts/lint.py
 
-  hub-packager:
-    # The hub's own build of this commit, set up as their CI sets it up. Advisory: it uses their
-    # tooling, which can change under us, so a failure here is a prompt to look rather than a block.
+  packager:
     name: Plugin Hub packager
     runs-on: ubuntu-24.04
     continue-on-error: true
@@ -61,41 +56,31 @@ jobs:
           java-version: 11
       - name: Fetch the packager
         run: |
-          set -exu
-          curl --location --fail --retry 4 --max-time 30 --output bundle.tar.zst \
-            "https://github.com/runelite/plugin-hub-tooling/releases/download/v1/bundle.tar.zst"
+          set -eu
+          curl --location --fail --retry 4 --max-time 120 --output bundle.tar.zst "$PACKAGER_URL"
+          echo "$PACKAGER_SHA256  bundle.tar.zst" | sha256sum --check
           tar xf bundle.tar.zst
-      - uses: actions/cache/restore@v6
-        id: restore-cache
+      - uses: actions/cache@v6
         with:
           path: |
             ~/.gradle/caches/
             api/
           key: hub-deps-${{ hashFiles('plugin-hub/runelite.version', 'bundle.tar.zst') }}
-      - name: Prepare
-        if: steps.restore-cache.outputs.cache-hit != 'true'
-        run: ./prepare.sh
-      - uses: actions/cache/save@v6
-        if: steps.restore-cache.outputs.cache-hit != 'true'
-        with:
-          path: |
-            ~/.gradle/caches/
-            api/
-          key: ${{ steps.restore-cache.outputs.cache-primary-key }}
-      - name: Point our entry at this commit
+      - run: ./prepare.sh
+      - name: Add this commit as the hub entry
         run: |
           set -eu
-          printf 'repository=%s\ncommit=%s\n' "$REPOSITORY" "$COMMIT" > plugin-hub/plugins/emoji-chat-helper
-          git -C plugin-hub add plugins/emoji-chat-helper
-          git -C plugin-hub -c user.name=ci -c user.email=ci@localhost commit -q -m "Test emoji-chat-helper at $COMMIT"
+          {
+            echo "repository=$REPOSITORY"
+            echo "commit=$COMMIT"
+          } > "plugin-hub/plugins/$PLUGIN"
+          git -C plugin-hub add "plugins/$PLUGIN"
+          git -C plugin-hub -c user.name=ci -c user.email=ci@localhost commit -q -m "Test $PLUGIN at $COMMIT"
       - name: Package
         env:
-          FORCE_BUILD: emoji-chat-helper
-          # As the hub's own CI does for a pull request: build and check, never upload.
+          FORCE_BUILD: ${{ env.PLUGIN }}
           PACKAGE_IS_PR: "true"
         run: |
-          # Nothing the build prints is taken as a workflow command.
-          COMMAND_SECRET="$(openssl rand -hex 32)"
-          echo "::add-mask::$COMMAND_SECRET"
-          echo "::stop-commands::$COMMAND_SECRET"
+          COMMAND_TOKEN="$(openssl rand -hex 32)"
+          echo "::stop-commands::$COMMAND_TOKEN"
           exec java -XX:+UseParallelGC -cp package.jar net.runelite.pluginhub.packager.Packager

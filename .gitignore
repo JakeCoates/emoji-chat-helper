@@ -9,3 +9,7 @@ out/
 
 # Local tools: the dev client, and the script that builds the emoji data from its sources.
 dev-tools/
+
+.claude/
+.kilo/
+.kilo-cache/__pycache__/

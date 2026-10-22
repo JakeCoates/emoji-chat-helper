@@ -1,7 +1,0 @@
-# Keeps the CI workflow's actions up to date. The plugin itself has no dependencies to watch.
-version: 2
-updates:
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: monthly
